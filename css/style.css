@@ -76,7 +76,10 @@ h1 {
   border: 1.5px solid #38bdf8 !important;
   box-shadow: 0px 5px 10px #e5e5e5;
 }
-
+.git-hidden {
+  visibility: hidden;
+  position: fixed;
+}
 .main-form {
   background-color: white;
   font-weight: 600;
@@ -106,16 +109,16 @@ h1 {
   color: white;
 }
 
-.image-wrapper > span:link {
+.credits a:link {
   color: white;
 }
-.image-wrapper > span:visited {
+.credits a:visited {
   color: white;
 }
-.image-wrapper > span:hover {
+.credits a:hover {
   color: #059669;
 }
-.image-wrapper > span:active {
+.credits a:active {
   color: white;
 }
 
@@ -128,8 +131,12 @@ h1 {
   position: absolute;
   text-align: center;
   top: 70%;
+  fill: #f3f3f3;
 }
-
+.logo:hover {
+  fill: black;
+  color: black;
+}
 .button {
   padding: 3vw 3vh 0 3vw;
 }
@@ -183,5 +190,15 @@ h1 {
   }
   .image-wrapper {
     display: none;
+  }
+
+  .git-hidden {
+    fill: #444444;
+    visibility: visible;
+    bottom: 20%;
+    right: 5%;
+  }
+  .git-hidden:hover {
+    fill: #596d48;
   }
 }
