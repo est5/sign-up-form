@@ -6,18 +6,85 @@
 :root {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 10vh 15vw 5vh 3vw;
+}
+.text p:last-child {
+  margin-top: 3vh;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+}
+h1 {
+  padding: 2% 0 2% 0;
+  background-color: white;
+  padding-left: 3vw;
+  color: rgb(54, 54, 54);
+  font-size: 2.3rem;
+}
+.main-form {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3vw;
+  padding-bottom: 1.5vh;
+  box-shadow: 0px 5px 5px rgb(204, 204, 204);
+}
+.form-row {
+  margin-bottom: 20px;
+  margin-right: 10%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: max(40%, 200px);
+  color: #444444;
+}
+.form-row input {
+  background-color: #ffffff;
+  border: 1.5px solid #dddddd;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 14px;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.form-row input[type="text"]:focus {
+  border: 1px solid #38bdf8;
+}
+
+.main-form {
+  background-color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.form {
+  background-color: white;
 }
 
 .image-wrapper {
-  position: absolute;
-  margin-bottom: 0;
+  position: relative;
 }
 
 .image-wrapper > img {
   margin: 0;
   padding: 0;
   height: 100vh;
-  width: auto;
 }
 
 .image-wrapper > span {
@@ -42,7 +109,7 @@
   color: white;
 }
 
-.image-wrapper > .logo {
+.logo {
   color: #f3f3f3;
   font-weight: bold;
   font-size: 5rem;
@@ -51,4 +118,55 @@
   position: absolute;
   text-align: center;
   top: 70%;
+}
+
+.button {
+  padding: 3vw 3vh 0 3vw;
+}
+
+.button p {
+  font-size: 1.2rem;
+}
+.button-link:link {
+  color: #596d48;
+}
+
+.button-link:visited {
+  color: #596d48;
+}
+
+.button-link:hover {
+  color: #444444;
+}
+
+.button-link:active {
+  color: #596d48;
+}
+
+.button-link {
+  text-decoration: none;
+}
+
+.button > button {
+  margin-bottom: 3vh;
+  padding: 15px 45px;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: #596d48;
+  border: none;
+}
+
+@media screen and (max-width: 1030px) {
+  :root {
+    overflow-y: auto;
+    overflow-x: none;
+  }
+  .image-wrapper {
+    display: none;
+  }
+  .form-wrapper {
+    height: 100vh;
+  }
 }

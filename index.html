@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="image-wrapper">
-      <div class="logo"><p id="logo-text">TEMP</p></div>
+      <div class="logo"><p>{ICON}LOGO</p></div>
       <img
         src="static/img/brigitte-tohm-yRH0JI2S2KA-unsplash.jpg"
         alt="Mug with coffee, leaf background"
@@ -28,6 +28,59 @@
           Unsplash
         </a>
       </span>
+    </div>
+
+    <div class="form-wrapper">
+      <div class="text">
+        <p>
+          This is not a real online service! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Necessitatibus, commodi! Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
+        </p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div class="form">
+        <h1>Let's do this!</h1>
+        <form id="form" action="#">
+          <div class="main-form">
+            <div class="form-row">
+              <label for="fname">FIRST NAME</label>
+              <input type="text" name="first-name" id="fname" />
+            </div>
+            <div class="form-row">
+              <label for="lname">LAST NAME</label>
+              <input type="text" name="last-name" id="lname" />
+            </div>
+            <div class="form-row">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-row">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="phone" id="phone" />
+            </div>
+            <div class="form-row">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div class="form-row">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="button">
+        <button type="submit" form="form">Create Account</button>
+        <p>
+          Already have an account? <a class="button-link" href="#">Log in</a>
+        </p>
+      </div>
     </div>
   </body>
 </html>
