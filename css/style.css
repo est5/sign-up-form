@@ -8,7 +8,12 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   overflow: hidden;
 }
-
+#not-valid {
+  visibility: hidden;
+  color: red;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
 body {
   display: flex;
 }
@@ -63,8 +68,13 @@ h1 {
   font-size: 100%;
 }
 
-.form-row input[type="text"]:focus {
-  border: 1px solid #38bdf8;
+#fname:focus,
+#lname:focus,
+#email:focus,
+#phone:focus {
+  outline: none !important;
+  border: 1.5px solid #38bdf8 !important;
+  box-shadow: 0px 5px 10px #e5e5e5;
 }
 
 .main-form {
@@ -158,15 +168,15 @@ h1 {
   border: none;
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1155px) {
   :root {
     overflow-y: auto;
     overflow-x: none;
   }
+  body {
+    background-color: #f3f3f3;
+  }
   .image-wrapper {
     display: none;
-  }
-  .form-wrapper {
-    height: 100vh;
   }
 }

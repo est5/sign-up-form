@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
     <meta charset="UTF-8" />
+    <script src="js/script.js" defer></script>
     <title>Sign-up!</title>
   </head>
   <body>
@@ -62,7 +63,14 @@
             </div>
             <div class="form-row">
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required
+                onchange="check();"
+              />
+              <p id="not-valid">*passwords must match</p>
             </div>
             <div class="form-row">
               <label for="confirm-password">CONFIRM PASSWORD</label>
@@ -70,6 +78,7 @@
                 type="password"
                 name="confirm-password"
                 id="confirm-password"
+                onchange="check();"
               />
             </div>
           </div>
