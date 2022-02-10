@@ -10,9 +10,9 @@
 }
 #not-valid {
   visibility: hidden;
-  color: red;
+  color: #dc2626;
   font-weight: 500;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 body {
   display: flex;
@@ -106,16 +106,16 @@ h1 {
   color: white;
 }
 
-.image-wrapper > span :link {
+.image-wrapper > span:link {
   color: white;
 }
-.image-wrapper > span :visited {
+.image-wrapper > span:visited {
   color: white;
 }
-.image-wrapper > span :hover {
+.image-wrapper > span:hover {
   color: #059669;
 }
-.image-wrapper > span :active {
+.image-wrapper > span:active {
   color: white;
 }
 
@@ -166,6 +166,11 @@ h1 {
   font-weight: 700;
   background-color: #596d48;
   border: none;
+}
+
+.button > button:active {
+  box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.425),
+    inset 0 0 0em 0.05em rgba(255, 255, 255, 0.212);
 }
 
 @media screen and (max-width: 1155px) {
